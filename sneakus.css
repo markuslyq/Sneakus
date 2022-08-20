@@ -1,0 +1,144 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+#home{
+    height : 100vh;
+    background-image: url("Pictures/background image.jpg");
+}
+.logo{
+    display: flex;
+}
+
+div h4{
+    align-self: flex-end;
+    padding-bottom: 0;
+    margin: 0 20 0;
+    font-family: 'Exo 2', sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+}
+.logo-box{
+    top : 30%;
+    left : 30%;
+    transform : translate (-50%, -50%);
+    position : absolute;
+    font-family: 'Sulphur Point', sans-serif;
+    color: #fff;
+}
+
+.icon{
+    width: 100px;
+    margin-left: 25px;
+}
+
+.header-text {
+    color: black;
+    text-align: center;
+}
+
+.row-text {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+body {
+    color: rgb(0, 0, 0);
+}
+/* ------------ Nav-Bar -------------- */
+.logo img{
+    width: 100px;
+}
+
+.navbar{
+    padding: 10px 10px;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(169, 169, 169);
+    display: flex;
+    position: sticky; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navSearch{
+    display: flex;
+}
+.has-search .form-control {
+    margin-top: 20px;
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    margin-top: 18px;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+/* ------------ Table -------------- */
+#display{
+    margin-top: 3rem;
+}
+.table{
+    background-color: #fff;
+    width: 75%;
+    margin: auto;
+    text-align: left;
+
+}
+thead th{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+.question{
+    width: 1px;
+    margin-bottom: 50px;
+}
+.titleHeader{
+    width: 400px;
+    padding: 8px 8px 0px;
+}
+.rpHeader{
+    width: 120px;
+    padding: 8px 8px 0px;
+}
+.lsHeader{
+    width: 120px;
+    padding: 8px 8px 0px;
+}
+.laHeader{
+    width: 140px;
+    padding: 8px 8px 0px;
+}
+.hbHeader{
+    width: 140px;
+    padding: 8px 8px 0px;
+}
+.title{
+    display: flex;
+    width: inherit;
+    padding: 8px;
+    margin: 0px;
+}
+tbody{
+    font-family: 'Play', sans-serif;
+}
+.name{
+    font-size: 18px;
+    margin-left: 2rem;
+    margin-top: 30px;
+}
+.price{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.table img{
+    width: 30%;
+}

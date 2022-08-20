@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="sneakus.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2|Fjalla+One|Play&display=swap" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+
+  <script src="sneakus.js"></script>
+
+  <title>SNEAKUS</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <section id="home" class="row">
+      <div class="logo-box">
+        <div class="offset-0 col-md-10 offset-md-1 col-sm-12 col-xs-12">
+          <div class="logo"> 
+            <img class="icon" src="Pictures/sneakus icon.png">
+            <h4>the sneakers market </h4>
+          </div>
+          <div id="Search">
+            <div class="input-group mb-3 mt-3">
+                <input id="sneaker" type="text" class="form-control" placeholder="e.g. Nike Air Force 1">
+                <div class="input-group-append">
+                  <button id="searchBtn" class="btn btn-outline-secondary" type="button" onclick="search()"><i class="fa fa-search"></i></button>
+                </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </section> 
+  </div> 
+    
+  <section id="nav-bar">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="Pictures/sneakus icon.png"></a>
+      </div>
+      <div class="navSearch">
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input id="searchInput" type="text" class="form-control" placeholder="Search...">
+        </div>
+      </div>
+     </nav>
+    </section>
+
+    <section id="display" class="row">
+      <div id="results">
+      </div>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="titleHeader">NAME</th>
+              <th class="rpHeader">RELEASE YEAR</th>
+              <th class="rpHeader">RETAIL PRICE</th>
+              <th class="lsHeader">MARKET VALUE <sup><i class="fa fa-question-circle"></i></sup></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+      </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</html>
